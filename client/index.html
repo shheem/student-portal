@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal Demo</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Student Portal</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button id="tab-student" class="active">Student</button>
+      <button id="tab-teacher">Teacher</button>
+    </div>
+
+    <!-- STUDENT VIEW -->
+    <section id="student-view" class="view active">
+      <h2>Noten ansehen</h2>
+
+      <div class="card">
+        <input id="studentIdInput" placeholder="Student ID (z.B. 1001)" />
+        <button id="checkGradesBtn">Noten anzeigen</button>
+      </div>
+
+      <div id="gradesResult" class="card hidden"></div>
+
+      <h3>Vorlesungen</h3>
+      <div id="lecturesList" class="card"></div>
+    </section>
+
+    <!-- TEACHER VIEW -->
+    <section id="teacher-view" class="view">
+      <h2>Teacher Login</h2>
+
+      <div class="card">
+        <input
+          id="teacherPassword"
+          type="password"
+          placeholder="Passwort (Demo: admin123)"
+        />
+        <button id="teacherLoginBtn">Login</button>
+      </div>
+
+      <div id="teacherArea" class="hidden">
+        <h3>Vorlesung hochladen</h3>
+        <div class="card">
+          <input id="lectureTitle" placeholder="Lecture title" />
+          <input id="lectureFile" type="file" />
+          <button id="uploadLectureBtn">Upload</button>
+          <p id="uploadMsg"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

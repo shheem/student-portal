@@ -1,0 +1,100 @@
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+  font-weight: 600;
+}
+
+.tabs button.active {
+  background: #334155;
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+.card {
+  background: #111827;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  padding: 9px;
+  width: 60%;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: white;
+}
+
+button {
+  padding: 9px 12px;
+  margin-left: 6px;
+  border-radius: 8px;
+  border: 0;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #93c5fd;
+}
+
+#lecturesList ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#lecturesList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+#lecturesList button {
+  margin-left: 0;
+}
